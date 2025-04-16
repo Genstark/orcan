@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "Oracan",
+    "slug": "Oracan-v6",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/Logo.jpg",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/Splash2.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#BCD6DE"
+    }, 
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/Logo.jpg",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.helixsmartlabs.oracanv6"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "0ad26d1c-d76a-45ae-8c38-db46f8a9f445"
+      }
+    }
+  }
+}

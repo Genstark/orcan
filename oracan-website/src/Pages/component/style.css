@@ -1,0 +1,259 @@
+/* Text Styling */
+@import url("../../assets/fonts/font.css");
+.bg-gradient {
+  background-color: #4e54c8 !important;
+  /* fallback for older browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #d4e8ed,
+    rgba(57, 117, 136, 0.6)
+  ) !important;
+  background: linear-gradient(
+    to bottom,
+    #d4e8ed,
+    rgba(57, 117, 136, 0.6)
+  ) !important;
+}
+.team-bg {
+  background-color: white !important;
+}
+.eighteen {
+  font-size: 18px;
+}
+.twentyone {
+  font-size: 21px;
+}
+.twentyfour {
+  font-size: 24px;
+}
+.twentyeight {
+  font-size: 28px;
+}
+.thirtytwo {
+  font-size: 32px;
+}
+.sixtyfour {
+  font-size: 64px;
+}
+.fifty {
+  font-size: 50px;
+}
+.seventytwo {
+  font-size: 72px;
+}
+
+.greyText {
+  color: #d9d9d9;
+}
+.lightblue {
+  color: #1f9ad6;
+}
+.brightblue {
+  color: #0d96f6;
+}
+.black {
+  color: black;
+}
+.whiteColor {
+  color: #ffffff;
+}
+.greyBackground {
+  background-color: #d9d9d9;
+}
+.m-b {
+  font-family: "Montserrat-Bold";
+}
+.m-m {
+  font-family: "Montserrat-Medium";
+}
+.p-t {
+  font-family: "PaytoneOne-Regular";
+}
+
+.options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.menu-icon {
+  display: none;
+}
+.team-card {
+  width: 100%;
+  aspect-ratio: 1;
+  border-top-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+}
+.checkbox-container {
+  background-color: rgba(72, 128, 146, 0.5);
+  width: 15px;
+  height: 15px;
+  border-radius: 5px;
+  border: 1px solid rgba(72, 128, 146, 1);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.checkbox-filled {
+  border: 0;
+  width: 11px;
+  height: 11px;
+  border-radius: 4px;
+  background-color: rgba(72, 128, 146, 1);
+}
+.menu-right-size {
+  width: 40%;
+}
+
+@media only screen and (max-width: 1600px) {
+  .options img {
+    height: 35px;
+  }
+  .options span {
+    font-size: 18px;
+  }
+  .menu-right-size {
+    width: 50%;
+  }
+}
+
+.show-bg {
+  background-image: none;
+}
+
+.padding170 {
+  padding-top: 170px;
+}
+
+.pointer {
+  cursor: pointer;
+  text-decoration: none;
+}
+.white-bg {
+  background-color: white;
+}
+.getApp {
+  background-color: #1f9ad6;
+  border-radius: 10px;
+  padding: 5px 20px 5px 20px;
+  border: 0;
+  max-width: 438px;
+  width: 100%;
+}
+.bg-lightblue {
+  background-color: #1f9ad6;
+}
+
+.service-image-holder {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.service-text-holder {
+  padding: 15px;
+  width: 70%;
+}
+.footer-copy {
+  justify-content: flex-start;
+}
+@media only screen and (max-width: 1200px) {
+  .menu-right-size {
+    width: 60%;
+  }
+  .footer-copy {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .options {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+  }
+  .remove-bg {
+    display: none;
+  }
+  .show-bg {
+    background-image: url("../../assets/header-bg-mobile.jpg");
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .padding170 {
+    padding-top: 0;
+  }
+  .sixtyfour {
+    font-size: 40px;
+  }
+  .mobile {
+    color: white !important;
+  }
+  .getApp {
+    background-color: white !important;
+    color: #1f9ad6 !important;
+    border-radius: 10px;
+    padding: 5px 20px 5px 20px;
+    border: 0;
+    max-width: 300px;
+    width: 100%;
+    font-size: 20px !important;
+  }
+  .remove-about {
+    display: none;
+  }
+  .reduce-70 {
+    min-height: 70vh !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .reduce-text {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .service-image-holder {
+    display: none;
+  }
+  .service-text-holder {
+    width: 100%;
+  }
+  .privacy-heading {
+    display: none;
+  }
+  .remove-p5 {
+    padding: 8px !important;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .remove-320 {
+    display: none !important;
+  }
+}
+
+.oracan-gradient {
+  background-color: #4e54c8 !important;
+  /* fallback for older browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #d4e8ed,
+    rgba(57, 117, 136, 0.6)
+  ) !important;
+  background: linear-gradient(
+    to bottom,
+    #d4e8ed,
+    rgba(57, 117, 136, 0.6)
+  ) !important;
+}

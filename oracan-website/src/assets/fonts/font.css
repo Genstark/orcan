@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("./Montserrat-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url("./Montserrat-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "PaytoneOne-Regular";
+  src: url("./PaytoneOne-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Urbanist-SemiBold";
+  src: url("./Urbanist-SemiBold.ttf") format("truetype");
+}

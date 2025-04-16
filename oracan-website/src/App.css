@@ -1,0 +1,596 @@
+:root {
+  --primary: #1f9ad6;
+  --secondary: rgba(86, 179, 224, 0.4);
+  --accent: white;
+  --color-text: black;
+  --sm: 12px;
+  --md: 16px;
+  --lg: 24px;
+  --xl: 36px;
+}
+/* App.css */
+body {
+  margin: 0;
+  font-family: "Black Mango";
+}
+.sm-title {
+  font-size: 13px;
+  color: #000;
+  font-family: inter;
+  margin-bottom: 10px;
+}
+.onFocus:focus {
+  outline: none;
+}
+.upload-btn {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+  padding: 8px 12px;
+  cursor: pointer;
+  width: 40%;
+  z-index: 5;
+}
+
+.upload-btn .icn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  object-fit: none;
+  right: 0px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  margin-right: 0;
+  z-index: 1;
+}
+
+.upload-btn input[type="file"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 5;
+}
+.upload-btn i {
+  margin-right: 8px;
+}
+textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: #fff;
+  min-height: calc(100vh - 295px);
+  max-height: calc(100vh - 295px);
+  overflow: auto;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 1px 5px 2px -2px #e5e5e5;
+}
+.textarea-count {
+  border: none;
+  box-shadow: 1px 5px 2px -2px #e5e5e5;
+  align-items: center;
+  background: #eeeeee 0% 0% no-repeat padding-box;
+  border-radius: 0px 0px 8px 8px;
+  opacity: 1;
+  min-height: calc(100vh - 265px);
+  max-height: calc(100vh - 265px);
+}
+.textarea-count p {
+  font-family: inter;
+  font-size: 10px;
+  letter-spacing: 0px;
+  color: #757587;
+}
+.textarea-count div {
+  padding-left: 10px;
+}
+.public-info .card {
+  padding: 10px;
+  font-family: inter;
+  background: #fff;
+  border: none;
+  box-shadow: 1px 5px 2px -2px #e5e5e5;
+}
+.public-info .card a {
+  color: red;
+  font-size: 13px;
+  text-decoration: none;
+}
+.public-info .card .btn {
+  color: #000;
+  font-size: 13px;
+  text-decoration: none;
+  background-color: #56b3e0;
+}
+
+.public-info .card .sm-text {
+  color: #757587;
+  font-size: 13px;
+  font-weight: 400;
+}
+.new-post .input-style {
+  font-family: "inter";
+  color: #757587;
+  background: #fff;
+  border: none;
+  box-shadow: 1px 5px 2px -2px #e5e5e5;
+  border-radius: 4px;
+  padding: 10px 10px;
+}
+
+.prev-post .card {
+  height: calc(100vh - 385px);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.prev-post .sm-text {
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.main-section {
+  margin-left: 275px;
+}
+@media only screen and (max-width: 630px) {
+  .main-section {
+    margin-left: 275px;
+  }
+}
+.main-section ::-webkit-scrollbar {
+  width: 3px;
+}
+.main-section ::-webkit-scrollbar-thumb {
+  background: #1f9ad6;
+}
+.bg-blue {
+  background-color: var(--primary);
+  min-height: 100vh;
+  background-image: url(./assets/back2.png);
+}
+
+/* @font-face {
+  font-family: bm-black;
+  src: url(./fonts/Black-Mango-Black.ttf);
+} */
+
+.bm-black {
+  font-family: bm-black;
+}
+
+/* @font-face {
+  font-family: bm-bold;
+  src: url(./fonts/Black-Mango-Bold.ttf);
+} */
+
+.bm-bold {
+  font-family: bm-bold;
+}
+
+/* @font-face {
+  font-family: bm-light;
+  src: url(./fonts/Black-Mango-Light.ttf);
+} */
+
+.bm-light {
+  font-family: bm-light;
+}
+
+/* @font-face {
+  font-family: bm-medium;
+  src: url(./fonts/Black-Mango-Medium.ttf);
+} */
+
+.bm-medium {
+  font-family: bm-medium;
+}
+
+/* @font-face {
+  font-family: bm-regular;
+  src: url(./fonts/Black-Mango-Regular.ttf);
+} */
+
+.bm-regular {
+  font-family: bm-regular;
+}
+
+@font-face {
+  font-family: bm-semi;
+  src: url(./fonts/Black-Mango-SemiBold.ttf);
+}
+
+.bm-semi {
+  font-family: bm-semi;
+}
+
+@font-face {
+  font-family: bm-thin;
+  src: url(./fonts/Black-Mango-Thin.ttf);
+}
+
+/* global font-family */
+@font-face {
+  font-family: "Black Mango";
+  src: url("./assets/globalFonts/fonts/BlackMango-Black.woff2") format("woff2"),
+    url("./assets/globalFonts/fonts/BlackMango-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Black Mango";
+  src: url("./assets/globalFonts/fonts/BlackMango-Black.woff2") format("woff2"),
+    url("./assets/globalFonts/fonts/BlackMango-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Black Mango";
+  src: url("./assets/globalFonts/fonts/BlackMango-ExtraBold.woff2")
+      format("woff2"),
+    url("./assets/globalFonts/fonts/BlackMango-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Black Mango";
+  src: url("./assets/globalFonts/fonts/BlackMango-ExtraLight.woff2")
+      format("woff2"),
+    url("./assets/globalFonts/fonts/BlackMango-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Black Mango";
+  src: url("./assets/globalFonts/fonts/BlackMango-Bold.woff2") format("woff2"),
+    url("./assets/globalFonts/fonts/BlackMango-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Black Mango";
+  src: url("./assets/globalFonts/fonts/BlackMango-Light.woff2") format("woff2"),
+    url("./assets/globalFonts/fonts/BlackMango-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Black Mango";
+  src: url("./assets/globalFonts/fonts/BlackMango-ExtraLight.woff2")
+      format("woff2"),
+    url("./assets/globalFonts/fonts/BlackMango-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Black Mango";
+  src: url("./assets/globalFonts/fonts/BlackMango-Medium.woff2") format("woff2"),
+    url("./assets/globalFonts/fonts/BlackMango-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Black Mango";
+  src: url("./assets/globalFonts/fonts/BlackMango-Regular.woff2")
+      format("woff2"),
+    url("./assets/globalFonts/fonts/BlackMango-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Black Mango";
+  src: url("./assets/globalFonts/fonts/BlackMango-Light.woff2") format("woff2"),
+    url("./assets/globalFonts/fonts/BlackMango-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Black Mango";
+  src: url("./assets/globalFonts/fonts/BlackMango-Thin.woff2") format("woff2"),
+    url("./assets/globalFonts/fonts/BlackMango-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Black Mango";
+  src: url("./assets/globalFonts/fonts/BlackMango-SemiBold.woff2")
+      format("woff2"),
+    url("./assets/globalFonts/fonts/BlackMango-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Black Mango";
+  src: url("./assets/globalFonts/fonts/BlackMango-Regular.woff2")
+      format("woff2"),
+    url("./assets/globalFonts/fonts/BlackMango-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Black Mango";
+  src: url("./assets/globalFonts/fonts/BlackMango-Medium.woff2") format("woff2"),
+    url("./assets/globalFonts/fonts/BlackMango-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Black Mango";
+  src: url("./assets/globalFonts/fonts/BlackMango-Bold.woff2") format("woff2"),
+    url("./assets/globalFonts/fonts/BlackMango-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Black Mango";
+  src: url("./assets/globalFonts/fonts/BlackMango-Thin.woff2") format("woff2"),
+    url("./assets/globalFonts/fonts/BlackMango-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Black Mango";
+  src: url("./assets/globalFonts/fonts/BlackMango-ExtraBold.woff2")
+      format("woff2"),
+    url("./assets/globalFonts/fonts/BlackMango-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Black Mango Variable";
+  src: url("./assets/globalFonts/fonts/BlackMangoVariable.woff2")
+      format("woff2"),
+    url("./assets/globalFonts/fonts/BlackMangoVariable.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Black Mango";
+  src: url("./assets/globalFonts/fonts/BlackMango-SemiBold.woff2")
+      format("woff2"),
+    url("./assets/globalFonts/fonts/BlackMango-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* End */
+.scrollView {
+  height: calc(100vh - 100px);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.bm-thin {
+  font-family: bm-thin;
+}
+
+.sm {
+  font-size: 12px;
+}
+.md {
+  font-size: 16px;
+}
+.lg {
+  size: 24px;
+}
+.xl {
+  font-size: 36px;
+  line-height: 57px;
+}
+
+.accent {
+  color: var(--accent);
+}
+
+p {
+  font-size: var(--md);
+  color: var(--accent);
+  font-weight: 900;
+  line-height: 20px;
+}
+
+.flex-row-align-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.login-card {
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  backdrop-filter: blur(10px);
+  filter: brightness(115%);
+  background-color: rgba(255, 255, 255, 0);
+  padding: 40px 30px 100px 30px;
+  min-width: 330;
+}
+
+.login-text-field {
+  width: 100%;
+  background-color: white;
+  border-radius: 8px 8px 0 0;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.16);
+}
+
+.login-button {
+  margin-top: 60px;
+  height: 50px;
+  width: 50%;
+  border: 0px;
+  border-radius: 8px;
+  background-color: #1f9ad6;
+  color: white;
+  font-family: poppins;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.16);
+}
+.side-menu {
+  background-color: #488092;
+  height: 100vh;
+  background-image: url(./assets/sideback.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: inline-flex;
+  flex-direction: column;
+  width: 275px;
+  position: fixed;
+}
+.top-holder {
+  height: 86px;
+}
+
+.bottom-holder {
+  height: 55px;
+}
+
+.top-holder {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  margin-bottom: 15px;
+}
+
+.bottom-holder {
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.middle-holder {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.middle-holder span a {
+  color: white;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 25px;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.icn {
+  margin-right: 20px;
+}
+
+.bottom-holder span a {
+  color: white;
+  font-family: bm-bold;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+.icn-2 {
+  margin-right: 15px;
+}
+.page-heading {
+  font-size: var(--xl);
+  color: var(--color-text);
+  font-weight: 900;
+  margin: 0;
+  font-size: 36px;
+}
+
+.logo {
+  width: 180px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.top-nav-with-name {
+  background-color: white;
+  height: 87px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.dashboard-card {
+  background-color: "white";
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+/* table */
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  background: #fafafa;
+}
+
+.table th,
+.table td {
+  border-bottom: 2px solid #ddd;
+  padding: 8px;
+  background: transparent;
+}
+
+.table th {
+  text-align: left;
+  padding-bottom: 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+/* End */
